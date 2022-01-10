@@ -1,0 +1,21 @@
+/* Website is only accessiblle from mobile and not other devices */
+/* Media queries for iPhone X (medium-sized devices) */
+@media only screen and (max-width: 375px) {
+   #no-access{
+      display: none;
+   }
+   
+   body{
+      color: #fcfbf2;
+   }
+
+   h1{
+      color: grey;
+      font-family: Arial;
+   }
+}
+
+/* CSS for when accessing website from larger devices */
+#no-access{
+   display: block;
+}
