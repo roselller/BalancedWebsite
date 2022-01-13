@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Balanced</title>
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
+    <link href="../style/signup.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
+    
+  </head>
+  <body>
+    <!--Sign up screen that appears if the user does not have an account-->
+    <section id="signup">
+      <h1 id="signup-header1">Welcome to Balanced</h1>
+      <h2 id="signup-header2">Sign up</h2>
+      <form id="signup-form">
+        <input type="text" placeholder="Full name" id="signup-name" required><br>
+        <input type="email" placeholder="Email" id="signup-email" required><br>
+        <input type="password" placeholder="Password" id="signup-password" required>
+        <button type="submit" id="signup-create">Create your account</button>
+      </form>
+      <a href="signin.html" id="signup-signin">Already have an account?</a>
+      <p id="signup-terms">By creating an account, you agree to our <a href="">Terms</a></p>
+    </section>
+
+    <script src="../script/signup.js"></script>
+  </body>
+</html>
