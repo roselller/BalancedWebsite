@@ -1,16 +1,22 @@
-/*Javascript to remove splashscreen after 3 seconds*/
+//javascript to remove splashscreen after 3 seconds
 document.addEventListener('DOMContentLoaded', (e)=>{
+   //splashscreen javascript
    setTimeout(()=>{
       $('#splash').css({"opacity": "0", "z-index": "-200", "transition": "all 1s"});
    }, 3000);
+
+   //if user does not have an account
+   $("#signin-signup").on("click", ()=>{
+      $("#signin").css("z-index", "-200");
+   });
+
+   //if user has an account
+   $("#signup-signin").on("click", ()=>{
+      $("#signin").css("z-index", "200");
+   });
+
+   //RESTDB AND SIGN IN AND SIGN UP
+   //reset form values
+   $("#signin-form").reset();
+   $("#signup-form").reset();
 });
-
-/*If user does not have an account, sign in page will fade away and sign up page will fade in*/
-document.getElementById('signin-signup').addEventListener(onclick, (e)=>{
-   $('#signin').css({"opacity": "0", "z-index": "-100", "transition": "all 0.5"})
-});
-
-/*When user signs in and presses the button*/
-
-
-/*When user signs up and presses the button*/
