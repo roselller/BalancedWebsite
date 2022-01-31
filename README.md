@@ -2,6 +2,8 @@
 
 Our project is called Balanced, a productivity application that aims to increase productivity levels for students of any age. We adapted this concept from our Innovation Made Possible (IMP) Project and refined it to incorporate gamification to our application. Making studying a more enjoyable process to students.
 
+You can access our wireframe for this project via this link: https://xd.adobe.com/view/ccf5385c-9564-43c5-ba90-a9a3277be86e-99a6/
+
 ## Design Process
 
 Provide us insights about your design process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
