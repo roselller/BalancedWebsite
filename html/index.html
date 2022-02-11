@@ -9,47 +9,42 @@
     <link href="../style/index.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!--Header-->
-    <header class="header" id="header">
-      <nav class="nav-container">
-        <a href="#" class="nav-logo">Balanced</a>
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class='bx bx-list-plus'></i>
-                <span class="nav-name">To-Do</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class='bx bx-music' ></i>
-                <span class="nav-name">Music</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class='bx bx-calendar' ></i>
-                <span class="nav-name">Timeline</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class='bx bx-coin-stack' ></i>
-                <span class="nav-name">Bank</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class='bx bx-clipboard' ></i>
-                <span class="nav-name">Quiz</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header>
+      <i class="bx bx-cog"></i>
+      <h2 id="header-title">To-Do List</h2>
+      <i class="bx bx-message-square-add open-note" onclick="openFunction()"></i>
     </header>
-
+    
+    <section class="note-popup" id="add">
+      <form action="/action_page.php" class="add-container">
+      
+        <label for="title of objective"><b>Title</b></label>
+        <input type="text" placeholder="Enter Titile" name="Title" required>
+    
+        <button type="submit" class="btn">Add</button>
+        <button type="button" class="btn cancel" onclick="closeFunction()">Close</button>
+      </form>
+    </section>
+    
+    <nav class="nav">
+      <a href="#" class="nav-link nav-link-active">
+        <i id="list" class='bx bx-list-plus'></i>
+        <span class="nav-name">To-Do</span>
+      </a>
+      <a href="#" class="nav-link">
+        <i class='bx bx-music'></i>
+        <span class="nav-name">Music</span>
+      </a>
+      <a href="#" class="nav-link">
+        <i class='bx bx-coin-stack'></i>
+        <span class="nav-name">Bank</span>
+      </a>
+      <a href="#" class="nav-link">
+        <i class='bx bx-clipboard'></i>
+        <span class="nav-name">Quiz</span>
+      </a>
+    </nav>
+    
     <script src="../script/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
   </body>
