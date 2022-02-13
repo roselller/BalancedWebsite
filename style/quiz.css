@@ -31,10 +31,10 @@
   .header {
     position: absolute;
     top: 31px;
-    left: 140px;
+    left: 160px;
   }
 
-  .bx.bx-message-square-add {
+  .bx.bx-help-circle {
     position: absolute;
     top: 31px;
     left: 334px;
