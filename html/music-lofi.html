@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lofi</title>
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
+    <link href="../style/music-lofi.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <audio src="" id="audio"></audio>
+
+    <header> <!--top header-->
+      <i class="bx bx-cog"></i>
+      <h2 class="header">Music</h2>
+      <i class='bx bx-help-circle'></i>
+    </header>
+
+    <section class="genre-header"> <!--menu list for user to choose music genre to listen to-->
+      <h1>Lofi</h1>
+    </section>
+
+    <section class="music-player">
+      <h1 class="music-name">Song one</h1>
+      <p class="artist-name">artist</p>
+
+      <section class="disk"></section>
+
+      <section class="song-slider">
+        <input type="range" value="0" class="seek-bar">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </section>
+
+      <section class="controls">
+        <button class="btn bf-btn"><img src="../others/bf.png" alt="back"></button>
+
+        <button class="play-btn pause">
+          <span></span>
+          <span></span>
+        </button>
+
+        <button class="btn ff-btn"><img src="../others/ff.png" alt="fast forward"></button>
+      </section>
+
+    </section>
+
+    <nav class="nav"> <!--bottom navigation-->
+      <a href="index.html" class="nav-link">
+        <i id="list" class='bx bx-list-plus'></i>
+        <span class="nav-name">To-Do</span>
+      </a>
+      <a href="music.html" class="nav-link nav-link-active">
+        <i class='bx bx-music'></i>
+        <span class="nav-name">Music</span>
+      </a>
+      <a href="bank.html" class="nav-link">
+        <i class='bx bx-coin-stack'></i>
+        <span class="nav-name">Bank</span>
+      </a>
+      <a href="quiz.html" class="nav-link">
+        <i class='bx bx-clipboard'></i>
+        <span class="nav-name">Quiz</span>
+      </a>
+    </nav>
+    
+    <script src="../script/data.js"></script>
+    <script src="../script/music-lofi.js"></script>
+  </body>
+</html>
