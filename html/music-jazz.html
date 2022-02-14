@@ -9,6 +9,8 @@
     <link href="../style/music-jazz.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <audio src="" id="audio"></audio>
+
     <header> <!--top header-->
       <i class="bx bx-cog"></i>
       <h2 class="header">Music</h2>
@@ -17,6 +19,31 @@
 
     <section class="genre-header"> <!--menu list for user to choose music genre to listen to-->
       <h1>Jazz</h1>
+    </section>
+
+    <section class="music-player"> <!--music player-->
+      <h1 class="music-name">Song one</h1>
+      <p class="artist-name">artist</p>
+
+      <section class="disk"></section>
+
+      <section class="song-slider">
+        <input type="range" value="0" class="seek-bar">
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </section>
+
+      <section class="controls">
+        <button class="btn bf-btn"><img src="../others/bf.png" alt="back"></button>
+
+        <button class="play-btn pause">
+          <span></span>
+          <span></span>
+        </button>
+
+        <button class="btn ff-btn"><img src="../others/ff.png" alt="fast forward"></button>
+      </section>
+
     </section>
 
     <nav class="nav"> <!--bottom navigation-->
@@ -28,9 +55,9 @@
         <i class='bx bx-music'></i>
         <span class="nav-name">Music</span>
       </a>
-      <a href="bank.html" class="nav-link">
-        <i class='bx bx-coin-stack'></i>
-        <span class="nav-name">Bank</span>
+      <a href="timer.html" class="nav-link">
+        <i class='bx bx-stopwatch'></i>
+        <span class="nav-name">Timer</span>
       </a>
       <a href="quiz.html" class="nav-link">
         <i class='bx bx-clipboard'></i>
@@ -38,6 +65,7 @@
       </a>
     </nav>
     
+    <script src="../script/data2.js"></script>
     <script src="../script/music-jazz.js"></script>
   </body>
 </html>

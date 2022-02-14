@@ -59,17 +59,17 @@ playBtn.addEventListener('click', () => {
     }
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
-})
+});
 
 // seek bar
 setInterval(() => {
     seekBar.value = music.currentTime;
     currentTime.innerHTML = formatTime(music.currentTime);
-}, 500)
+}, 500);
 
 seekBar.addEventListener('change', () => {
     music.currentTime = seekBar.value;
-})
+});
 
 // forward and backward button
 forwardBtn.addEventListener('click', () => {
@@ -80,7 +80,7 @@ forwardBtn.addEventListener('click', () => {
     }
     setMusic(currentMusic);
     playMusic();
-})
+});
 
 backwardBtn.addEventListener('click', () => {
     if(currentMusic <= 0){
@@ -90,7 +90,7 @@ backwardBtn.addEventListener('click', () => {
     }
     setMusic(currentMusic);
     playMusic();
-})
+});
 
 const playMusic = () => {
     music.play();
@@ -104,4 +104,4 @@ setInterval(() => {
     if(Math.floor(music.currentTime) == Math.floor(seekBar.max)){
         forwardBtn.click();
     }
-}, 500)
+}, 500);
