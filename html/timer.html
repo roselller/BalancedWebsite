@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work Bank</title>
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
+    <link href="../style/timer.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header> <!--top header-->
+      <i class="bx bx-cog"></i>
+      <h2 class="header">Timer</h2>
+      <i class="bx bx-message-square-add open-note" onclick="openFunction()"></i>
+    </header>
+    
+    <nav class="nav"> <!--bottom navigation-->
+      <a href="index.html" class="nav-link">
+        <i id="list" class='bx bx-list-plus'></i>
+        <span class="nav-name">To-Do</span>
+      </a>
+      <a href="music.html" class="nav-link">
+        <i class='bx bx-music'></i>
+        <span class="nav-name">Music</span>
+      </a>
+      <a href="timer.html" class="nav-link nav-link-active">
+        <i class='bx bx-coin-stack'></i>
+        <span class="nav-name">Timer</span>
+      </a>
+      <a href="quiz.html" class="nav-link">
+        <i class='bx bx-clipboard'></i>
+        <span class="nav-name">Quiz</span>
+      </a>
+    </nav>
+    
+    <script src="../script/timer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
+  </body>
+</html>
