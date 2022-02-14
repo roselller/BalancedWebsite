@@ -5,7 +5,20 @@
 
   body {
     font-family: Calibri;
-    background: #f3fff9;
+    background: #f3fff980;
+  }
+
+  /*background*/
+  .background {
+    position: fixed;
+    filter: blur(2px);
+    height: 100%;
+    opacity: 0.3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    z-index: -999;
   }
 
   /*top header*/
@@ -31,7 +44,7 @@
   .header {
     position: absolute;
     top: 31px;
-    left: 130px;
+    left: 158px;
   }
 
   .bx.bx-message-square-add {

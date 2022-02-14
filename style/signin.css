@@ -4,6 +4,10 @@
       font-family: lato;
       width: 100%;
    }
+
+   #desktop {
+      display: none;
+   }
    
    /*splashscreen section of login page*/
    #splash{
@@ -150,13 +154,14 @@
 
 /*styling for desktop users*/
 #desktop{
-   display: block;
+   display: fixed;
    position: fixed;
    width: 100%;
    height: 100%;
    text-align: center;
    background: #f3fff9;
    z-index: 0;
+   overflow: hidden;
 }
 
 #desktop-title{
