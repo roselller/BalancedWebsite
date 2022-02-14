@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #5f7a61;
+    background: #f3fff9;
   }
 
   /*top header*/
@@ -44,6 +44,7 @@
     top: 31px;
     left: 334px;
   }
+
   .genre-header {
     display: flex;
     justify-content: center;
@@ -54,13 +55,17 @@
     background-color: #e4e4e4;
     z-index: -1;
   }
+
+  /*music player*/
   .music-player {
+    position: relative;
     width: 350px;
-    height: 510px;
+    height: 550px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.08);
+    background: #5f7a6180;
     box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
     padding: 30px;
+    top: 40px;
     overflow: hidden;
   }
 
@@ -79,6 +84,7 @@
   .artist-name {
     font-size: 20px;
   }
+
   /*circular disk for music picture*/
   .disk {
     position: relative;
@@ -133,6 +139,7 @@
     box-shadow: -400px 0 0 400px #d5eebb;
   }
 
+  /*time and duration of music*/
   .current-time,
   .song-duration {
     font-size: 14px;
@@ -143,6 +150,7 @@
     right: 0;
   }
 
+  /*Pause, fast forward, back track*/
   .controls {
     width: 60%;
     display: flex;
