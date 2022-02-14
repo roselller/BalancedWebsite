@@ -5,7 +5,20 @@
 
   body {
     font-family: Calibri;
-    background: #f3fff9;
+    background: #f3fff980;
+  }
+
+  /*background*/
+  .background {
+    position: fixed;
+    filter: blur(2px);
+    height: 100%;
+    opacity: 0.3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    z-index: -999;
   }
 
   /*top header*/
@@ -31,13 +44,25 @@
   .header {
     position: absolute;
     top: 31px;
-    left: 160px;
+    left: 155px;
   }
 
   .bx.bx-help-circle {
     position: absolute;
     top: 31px;
     left: 334px;
+  }
+
+  /*Genre List*/
+  .genre-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    background-color: #e4e4e4;
+    z-index: -1;
   }
 
   /*navigation bar*/
