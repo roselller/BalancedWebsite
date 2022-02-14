@@ -31,13 +31,70 @@
   .header {
     position: absolute;
     top: 31px;
-    left: 130px;
+    left: 155px;
   }
 
-  .bx.bx-message-square-add {
+  .bx.bx-help-circle {
     position: absolute;
     top: 31px;
     left: 334px;
+  }
+
+  /* Countdown timer */
+  .timer {
+    color: black;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    margin-left: 20px;
+    margin-top: 150px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  /* remove the padding on the play button */
+  .btn {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  /* play and reset icons */
+  .fa-play,
+  .fa-redo-alt {
+    color: black;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+
+  .fa-play:hover,
+  .fa-redo-alt:hover {
+    color: black;
+    border: 2px solid black;
+    transition: 0.3s ease;
+  }
+
+  /* Dynamic class */
+  /* Make the message visible */
+  .show_message {
+    display: block;
+    padding: 1rem 0;
+    color: white;
+    background: black;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+    margin: 20px 0;
   }
 
   /*navigation bar*/

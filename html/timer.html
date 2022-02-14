@@ -3,17 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work Bank</title>
+    <title>Timer</title>
     <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
     <link href="../style/timer.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+
   </head>
-  <body>
+  <body onload="template()">
     <header> <!--top header-->
       <i class="bx bx-cog"></i>
       <h2 class="header">Timer</h2>
-      <i class="bx bx-message-square-add open-note" onclick="openFunction()"></i>
+      <i class='bx bx-help-circle'></i>
     </header>
+
+    <!-- Main Timer -->
+    <section class="container timer">
+      <section class="row">
+        <section class="col-5">
+          <h4 id="minutes"></h4>
+        </section>
+        <section class="col-2">
+          <h4>:</h4>
+        </section>
+        <section class="col-5">
+          <h4 id="seconds"></h4>
+        </section>
+      </section>
+    </section>
+
+    <!-- Finished Message -->
+    <section class="my-5">
+      <h3 id="done" class="text-center"></h3>
+    </section>
+
+    <!-- Start Button and reset button-->
+    <section class="container">
+      <button class="btn" onclick="start_timer()">
+        <i class="fas fa-play fa-2x"></i>
+      </button>
+      <a href="timer.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+    </section>
+  </section>
     
     <nav class="nav"> <!--bottom navigation-->
       <a href="index.html" class="nav-link">
@@ -25,7 +56,7 @@
         <span class="nav-name">Music</span>
       </a>
       <a href="timer.html" class="nav-link nav-link-active">
-        <i class='bx bx-coin-stack'></i>
+        <i class='bx bx-stopwatch'></i>
         <span class="nav-name">Timer</span>
       </a>
       <a href="quiz.html" class="nav-link">
@@ -35,6 +66,11 @@
     </nav>
     
     <script src="../script/timer.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
+    <!--Bookstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--jQuery Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
   </body>
 </html>
