@@ -11,10 +11,15 @@ const playBtn = document.querySelector('.play-btn');
 const forwardBtn = document.querySelector('.ff-btn');
 const backwardBtn = document.querySelector('.bf-btn');
 
-playBtn.addEventListener('click', () =>{
+playBtn.addEventListener('click', () => {
+    if(playBtn.className.includes('pause')){
+        music.play();
+    } else{
+        music.pause();
+    }
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
-})
+});
 
 //setting up the music
 
@@ -51,25 +56,15 @@ const formatTime = (time) => {
     return `${min} : ${sec}`;
 }
 
-playBtn.addEventListener('click', () => {
-    if(playBtn.className.includes('pause')){
-        music.play();
-    } else{
-        music.pause();
-    }
-    playBtn.classList.toggle('pause');
-    disk.classList.toggle('play');
-})
-
 // seek bar
 setInterval(() => {
     seekBar.value = music.currentTime;
     currentTime.innerHTML = formatTime(music.currentTime);
-}, 500)
+}, 500);
 
 seekBar.addEventListener('change', () => {
     music.currentTime = seekBar.value;
-})
+});
 
 // forward and backward button
 forwardBtn.addEventListener('click', () => {
@@ -80,7 +75,7 @@ forwardBtn.addEventListener('click', () => {
     }
     setMusic(currentMusic);
     playMusic();
-})
+});
 
 backwardBtn.addEventListener('click', () => {
     if(currentMusic <= 0){
@@ -90,7 +85,7 @@ backwardBtn.addEventListener('click', () => {
     }
     setMusic(currentMusic);
     playMusic();
-})
+});
 
 const playMusic = () => {
     music.play();
@@ -104,4 +99,4 @@ setInterval(() => {
     if(Math.floor(music.currentTime) == Math.floor(seekBar.max)){
         forwardBtn.click();
     }
-}, 500)
+}, 500);

@@ -11,10 +11,15 @@ const playBtn = document.querySelector('.play-btn');
 const forwardBtn = document.querySelector('.ff-btn');
 const backwardBtn = document.querySelector('.bf-btn');
 
-playBtn.addEventListener('click', () =>{
+playBtn.addEventListener('click', () => {
+    if(playBtn.className.includes('pause')){
+        music.play();
+    } else{
+        music.pause();
+    }
     playBtn.classList.toggle('pause');
     disk.classList.toggle('play');
-})
+});
 
 //setting up the music
 
@@ -50,16 +55,6 @@ const formatTime = (time) => {
     }
     return `${min} : ${sec}`;
 }
-
-playBtn.addEventListener('click', () => {
-    if(playBtn.className.includes('pause')){
-        music.play();
-    } else{
-        music.pause();
-    }
-    playBtn.classList.toggle('pause');
-    disk.classList.toggle('play');
-});
 
 // seek bar
 setInterval(() => {

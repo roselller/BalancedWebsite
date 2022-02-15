@@ -11,9 +11,9 @@
   /*background*/
   .background {
     position: fixed;
-    filter: blur(2px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
     height: 100%;
-    opacity: 0.3;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,10 +102,10 @@
   /* Make the message visible */
   .show_message {
     display: block;
-    padding: 1rem 0;
-    color: white;
-    background: black;
-    border-radius: 0.5rem;
+    padding: 10px;
+    color: black;
+    background: none;
+    border-radius: 20%;
     transition: 0.5s ease;
     margin: 20px 0;
   }

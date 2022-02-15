@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Timer</title>
     <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet"> <!--Boxicons CSS-->
     <link href="../style/timer.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!--Remove favicon 404 error-->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
-
   </head>
   <body onload="template()">
     <img src="../others/background.PNG" class="background"> <!--background image-->
     <header> <!--top header-->
-      <i class="bx bx-cog"></i>
+      <a href="setting.html">
+        <i class="bx bx-cog"></i>
+      </a>
       <h2 class="header">Timer</h2>
       <i class='bx bx-help-circle'></i>
     </header>
@@ -70,6 +72,7 @@
     <!--Bookstrap JS-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <!--jQuery Google CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/996973c893.js"></script>

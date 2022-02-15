@@ -6,6 +6,7 @@
     <title>Quiz</title>
     <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!--Remove favicon 404 error-->
     <link href="../style/quiz.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -17,8 +18,24 @@
       <i class='bx bx-help-circle'></i>
     </header>
 
-    <section class="topic-header"> <!--menu list for user to choose music genre to listen to-->
+    <section class="topic-header"> <!--menu list for user to choose topic to quiz on-->
       <h1>Topic List</h1>
+    </section>
+
+    <section class="topic-list">
+      <a href="quiz-csharp.html">
+        <article>
+            <h1>C#</h1>
+            <img src="../others/csharp.png"/>
+        </article>
+      </a>
+
+      <a href="quiz-databases.html">
+        <article>
+            <h1>Database</h1>
+            <img src="../others/database.png"/>
+        </article>
+      </a>
     </section>
 
     <nav class="nav"> <!--bottom navigation-->
