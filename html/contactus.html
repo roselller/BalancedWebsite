@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>References</title>
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!--Remove favicon 404 error-->
+    <link href="../style/contactus.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <img src="../others/background.PNG" class="background"> <!--background image-->
+    <header> <!--top header-->
+      <a href="setting.html">
+        <i class='bx bx-arrow-back'></i>
+      </a>
+      <h2 class="header">Contact us</h2>
+    </header>
+
+    <section class = "forms-container">
+        <form onsubmit= "return alert('Thank You for reaching out to me!');">
+          <!--Forms attributes -->
+        <label for = "name">Name:</label>
+        <input type = "text" id= "name" placeholder="Chen Junrui Justin" required><br><br>
+
+        <label for = "number">Class:</label>
+        <input type = "text" id= "number" placeholder="Eg. P04" pattern = "[P][0][1-9]" required><br><br>
+        
+        <label for = "email">Email:</label>
+        <input type = "email" id= "email" placeholder="justin@gmail.com"required><br><br>
+        
+        <label for = "message">Comments:</label>
+        <textarea id = "message" rows = "8" required></textarea><br><br>
+
+        <button class = "formbutton" type = "submit">Submit</button>
+
+        </form>
+    </section>
+    <section class="authors">
+        <p>Made By:</p>
+        <p>Chen Junrui Justin & Amirola Roseller III Tumolva</p>
+    </section>
+  </body>
+</html>

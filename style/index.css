@@ -1,7 +1,12 @@
 @media only screen and (max-width: 375px) and (max-height: 812px) {
   * {
     margin: 0px;
+<<<<<<< HEAD
     padding: 0;
+=======
+    padding: 0px;
+    -webkit-tap-highlight-color: transparent;
+>>>>>>> 9c0406898deb2f2352318eabaf04c952aaa8869d
   }
 
   body {
@@ -129,7 +134,6 @@
     overflow: hidden;
     white-space: nowrap;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent;
     transition: background-color 0.1s ease-in-out;
   }
 
