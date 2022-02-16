@@ -13,27 +13,30 @@
     <img src="../others/background.PNG" class="background"> <!--background image-->
 
     <header> <!--top header-->
-      <i class="bx bx-cog"></i>
+      <a href="setting.html">
+        <i class="bx bx-cog"></i>
+      </a>
       <h2 class="header">Quiz</h2>
-      <i class='bx bx-help-circle'></i>
+      <i class='bx bx-help-circle' onclick="helpFunction()"></i>
     </header>
 
-    <section class="topic-header"> <!--menu list for user to choose topic to quiz on-->
-      <h1>Topic List</h1>
+    <section class="help" onclick="helpFunction()"> <!--help popup-->
+      <h2 class="help-title">How to use Balanced quiz?</h1>
+      <p class="help-content">1. Choose the topic you want to be quizzed on<br>2. You will be asked 3 random questions relating to the subject<br>3. After the quiz, you will be evaluated with the answers you got correct or not<br>4. Review and revise your answers and improve your score next time!</p>
     </section>
 
     <section class="topic-list">
       <a href="quiz-csharp.html">
         <article>
-            <h1>C#</h1>
-            <img src="../others/csharp.png"/>
+            <img src="../others/csharpbg.png"/>
+            <h1 id="csharp-h1">C#</h1>
         </article>
       </a>
 
       <a href="quiz-databases.html">
         <article>
-            <h1>Database</h1>
-            <img src="../others/database.png"/>
+            <img src="../others/databasebg.png"/>
+            <h1 id="database-h1">DATABASE</h1>
         </article>
       </a>
     </section>
