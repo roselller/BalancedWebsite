@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>To-Do List</title>
-    <link href="../style/normalize.css" rel="stylesheet" type="text/css"> <!--Normalize CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--Boxicons CSS-->
-    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!--Remove favicon 404 error-->
-    <link href="../style/index.css" rel="stylesheet" type="text/css">
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css" />
+    <!--Normalize CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!--Boxicons CSS-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <!--Remove favicon 404 error-->
+    <link href="../style/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <img src="../others/background.PNG" class="background"> <!--background image-->
+    <img src="../others/background.PNG" class="background" />
+    <!--background image-->
 
-    <header> <!--top header-->
+    <header>
+      <!--top header-->
       <i class="bx bx-cog"></i>
       <h2 class="header">To-Do List</h2>
-      <i class="bx bx-message-square-add open-note" onclick="openFunction()"></i>
+      <i class="bx bx-message-square-add open-note" onclick="typeNote()"></i>
     </header>
-    
-    <section class="note-popup" id="add"> <!--adding a new list/"sticky note"-->
-      <form action="/action_page.php" class="add-container">
-      
-        <label for="title of objective"><b>Title</b></label>
-        <input type="text" placeholder="Enter Titile" name="Title" required>
-    
-        <button type="submit" class="btn">Add</button>
-        <button type="button" class="btn cancel" onclick="closeFunction()">Close</button>
-      </form>
+
+    <section class="main-container">
+      <section class="container1"></section>
+
+      <section class="container2">
+        <form>
+          <textarea
+            id="note-text"
+            placeholder="Enter Title..."
+            maxlength="50"
+          ></textarea>
+          <i class="bx bx-plus" id="addBtn" onclick="addNote()"></i>
+          <i class="bx bx-x" id="closeBtn" onclick="typeNote()"></i>
+        </form>
+      </section>
     </section>
-    
-    <nav class="nav"> <!--bottom navigation-->
+
+    <nav class="nav">
+      <!--bottom navigation-->
       <a href="index.html" class="nav-link nav-link-active">
-        <i id="list" class='bx bx-list-plus'></i>
+        <i id="list" class="bx bx-list-plus"></i>
         <span class="nav-name">To-Do</span>
       </a>
       <a href="music.html" class="nav-link">
-        <i class='bx bx-music'></i>
+        <i class="bx bx-music"></i>
         <span class="nav-name">Music</span>
       </a>
       <a href="timer.html" class="nav-link">
-        <i class='bx bx-stopwatch'></i>
+        <i class="bx bx-stopwatch"></i>
         <span class="nav-name">Timer</span>
       </a>
       <a href="quiz.html" class="nav-link">
-        <i class='bx bx-clipboard'></i>
+        <i class="bx bx-clipboard"></i>
         <span class="nav-name">Quiz</span>
       </a>
     </nav>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jQuery Google CDN-->
     <script src="../script/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
   </body>
 </html>
