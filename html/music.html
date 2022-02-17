@@ -17,8 +17,13 @@
         <i class="bx bx-cog"></i>
       </a>
       <h2 class="header">Music</h2>
-      <i class='bx bx-help-circle'></i>
+      <i class='bx bx-help-circle' onclick="helpFunction()"></i>
     </header>
+
+    <section class="help" onclick="helpFunction()"> <!--help popup-->
+      <h2 class="help-title">How to use Balanced music?</h1>
+      <p class="help-content">1. Choose the genre of music you prefer<br>2. Enjoy the music while completing your task<br></p>
+    </section>
 
     <section class="genre-list">
       <a href="music-lofi.html">
@@ -54,7 +59,7 @@
         <span class="nav-name">Quiz</span>
       </a>
     </nav>
-    
+    <script src="../script/music.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jQuery Google CDN-->
   </body>
 </html>

@@ -60,6 +60,42 @@
     left: 334px;
   }
 
+  /*help popup*/
+  .help {
+    visibility: hidden;
+    position: fixed;
+    width: 75%;
+    height: 30%;
+    line-height: 1.5;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid #70707070;
+    background-color: #f3fff9;
+    box-shadow: 0 0 0 100000px rgba(0,0,0,.2);
+    margin: auto;
+  }
+
+  .help.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
   .genre-header {
     display: flex;
     justify-content: center;

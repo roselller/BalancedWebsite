@@ -31,7 +31,7 @@
         Incorrect email/password, try again.
       </div>
       <form id="signin-form" action="index.html" method="GET">
-        <input type="email" placeholder="Email" id="signin-email" required><br>
+        <input type="email" placeholder="Email" id="signin-email" pattern="[S][0-9]{8}[A-Z]" required><br>
         <input type="password" placeholder="Password" id="signin-password" required><br>
         <input type="submit" value="Sign In" id="signin-button">
       </form>

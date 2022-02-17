@@ -1,9 +1,14 @@
+//help popup when user presses help button on the top right of screen
+function helpFunction() {
+  var popup = document.querySelector(".help");
+  popup.classList.toggle("show");
+}
+
 // Required variables
 var session_seconds = "00";
 var session_minutes = 25;
 
 // Audio files
-var click_sound = new Audio("../musics/click.mp3");
 var bell = new Audio("../musics/bell.mp3");
 
 // Starting template for the timer
@@ -13,11 +18,10 @@ function template() {
 }
 
 function start_timer() {
-  click_sound.play();
 
   //Change the minutes and seconds to starting time
-  session_minutes = 0;
-  session_seconds = 5;
+  session_minutes = 24;
+  session_seconds = 59;
 
   //Add the seconds and minutes to html page
   document.getElementById("minutes").innerHTML = session_minutes;

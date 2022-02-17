@@ -2,22 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>To-Do List</title>
-    <link href="../style/normalize.css" rel="stylesheet" type="text/css" />
-    <!--Normalize CSS-->
+    <link href="../style/normalize.css" rel="stylesheet" type="text/css"/><!--Normalize CSS-->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <!--Boxicons CSS-->
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-    <!--Remove favicon 404 error-->
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/><!--Boxicons CSS-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="/><!--Remove favicon 404 error-->
     <link href="../style/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <img src="../others/background.PNG" class="background" />
-    <!--background image-->
+    <img src="../others/background.PNG" class="background"/><!--background image-->
 
     <header> <!--top header-->
       <a href="setting.html">
@@ -26,6 +21,8 @@
       <h2 class="header">To-Do List</h2>
       <i class="bx bx-message-square-add open-note" onclick="typeNote()"></i>
     </header>
+
+    <h1 id="none-note">You have not added anything yet!</h1> <!--displays if there isnt any note added yet-->
 
     <section class="main-container">
       <section class="container1"></section>

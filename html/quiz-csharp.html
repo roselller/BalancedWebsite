@@ -18,71 +18,35 @@
       </section>
     </a>
 
-    <section class="start" onclick="startFunction()"> <!--quiz start-->
+    <section class="start"> <!--quiz start-->
       <h1 class="start-title">Are you ready?</h1>
       <h2 class="start-subtitle">This C# quiz contains 3 questions</h2><br>
       <lottie-player class="start-countdown" src="https://assets9.lottiefiles.com/packages/lf20_pge4fjym.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"></lottie-player>
       <p class="start-continue">Click anywhere to start</p>
     </section>
 
-    <section class="q1" style="visibility: hidden;"> <!--quiz question 1-->
-      <h1 class="q1-q">Question 1</h1>
-
-      <article class="q1-a">
-        <p class="q1-a-text">A</p>
+    <h1 class="qn" style="visibility: hidden;">Question 1</h1>
+    <section class="question" style="visibility: hidden;"> <!--quiz question-->
+      <article class="choice-container">
+        <p class="choice-text" data-number="1">A</p>
       </article>
 
-      <article class="q1-b">
-        <p class="q1-b-text">B</p>
+      <article class="choice-container">
+        <p class="choice-text" data-number="2">B</p>
       </article>
 
-      <article class="q1-c">
-        <p class="q1-c-text">C</p>
+      <article class="choice-container">
+        <p class="choice-text" data-number="3">C</p>
       </article>
 
-      <article class="q1-d">
-        <p class="q1-d-text">D</p>
-      </article>
-    </section>
-
-    <section class="q2" style="visibility: hidden;"> <!--quiz question 2-->
-      <h1 class="q1-q">Question 1</h1>
-      
-      <article class="q2-a">
-        <p class="q2-a-text">A</p>
-      </article>
-
-      <article class="q2-b">
-        <p class="q2-b-text">B</p>
-      </article>
-
-      <article class="q2-c">
-        <p class="q2-c-text">C</p>
-      </article>
-
-      <article class="q2-d">
-        <p class="q2-d-text">D</p>
+      <article class="choice-container">
+        <p class="choice-text" data-number="4">D</p>
       </article>
     </section>
 
-    <section class="q3" style="visibility: hidden;"> <!--quiz question 3-->
-      <h1 class="q1-q">Question 1</h1>
-      
-      <article class="q3-a">
-        <p class="q3-a-text">A</p>
-      </article>
-
-      <article class="q3-b">
-        <p class="q3-b-text">B</p>
-      </article>
-
-      <article class="q3-c">
-        <p class="q3-c-text">C</p>
-      </article>
-
-      <article class="q3-d">
-        <p class="q3-d-text">D</p>
-      </article>
+    <section class="q-alert"> <!--alert for whether user gets the question right or wrong-->
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_aqjbvvwh.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; visibility: hidden;"></lottie-player>
+      <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_t5ulirqh.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; visibility: hidden;"></lottie-player>
     </section>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--lottie files player-->

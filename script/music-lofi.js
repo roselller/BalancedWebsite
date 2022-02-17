@@ -1,3 +1,10 @@
+//help popup when user presses help button on the top right of screen
+function helpFunction() {
+    var popup = document.querySelector(".help");
+    popup.classList.toggle("show");
+}
+
+//music player
 let currentMusic = 0;
 
 const music = document.querySelector('#audio');

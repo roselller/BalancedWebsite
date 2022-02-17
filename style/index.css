@@ -54,11 +54,22 @@
     left: 334px;
   }
 
+  #none-note {
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    width: 70%;
+    opacity: 50%;
+  }
+
   /*adding of notes*/
   .main-container {
     width: 95%;
     margin: auto;
   }
+  
   .container1 {
     display: flex;
     justify-content: flex-start;
@@ -69,7 +80,7 @@
 
   .container2 {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 26%;
     left: 7%;
   }
