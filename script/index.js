@@ -17,36 +17,44 @@ function typeNote() {
 /*Adds note once user inputs title*/
 function addNote() {
   var noteText = document.getElementById("note-text").value;
-  var node0 = document.createElement("section");
-  var node1 = document.createElement("h1"); //h1 inside section (node0)
-  var nodeDelete = document.createElement("p"); //create delete button
+  var nodeSticky = document.createElement("section");
+  var nodeContents = document.createElement("h1"); //h1 inside section (sticky note)
+
+  //creating and adding html tags into delete button to remove sticky note
+  var nodeDelete = document.createElement("i");
+  nodeDelete.classList.add("bx");
+  nodeDelete.classList.add("bx-x");
+  nodeDelete.id = "deleteBtn";
+  nodeDelete.addEventListener("click", deleteNote());
 
   container2.style.display = "none";
   note++;
 
-  node1.innerHTML = noteText;
+  nodeContents.innerHTML = noteText;
 
   //Styling of section (note)
-  node1.setAttribute("style","width: 250px; height:250px; font-size: 20px; padding: 25px; margin-top: 10px; overflow: hidden; border: 1px solid #70707070; z-index: -10;");
-  node1.style.background = colour();
+  nodeContents.setAttribute("style","width: 250px; height:265px; font-size: 20px; padding: 25px; margin-top: 10px; overflow: hidden; border: 1px solid #70707070; z-index: -10;");
+  nodeContents.style.background = colour();
 
   //add text and delete button elements into the sticky note section
-  node0.appendChild(node1);
-  node0.appendChild(nodeDelete);
+  nodeSticky.appendChild(nodeContents);
+  nodeSticky.appendChild(nodeDelete)
 
-  nodeDelete.innerHTML = "x";
-  nodeDelete.setAttribute("style", "position: relative; font-size: 15px;")
-
-  container1.insertAdjacentElement("beforeend", node0);
+  container1.insertAdjacentElement("beforeend", nodeSticky);
 
   if (note > 0) {
     document.querySelector("#none-note").style.visibility = "hidden";
-  }
+  };
 
-  node0.addEventListener("click", function(){ //delete sticky note
-    node0.remove();
-  })
-}
+  /*
+  nodeDelete.addEventListener("click", function(){ //delete sticky note
+    nodeDelete.remove();
+  }) */
+};
+
+function deleteNote() {
+
+};
 
 function colour() {
   var random_colour = [
@@ -57,7 +65,7 @@ function colour() {
 
   if (i > random_colour.length - 1) {
     i = 0;
-  }
+  };
 
   return random_colour[i++];
-}
+};

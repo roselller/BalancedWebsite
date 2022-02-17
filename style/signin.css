@@ -52,7 +52,7 @@
    }
 
    /*sign in section of login page*/
-   #signin{
+   .signin{
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -62,6 +62,25 @@
       padding: 50% 0px 50%;
       z-index: 200;
       background: #f3fff9;
+      visibility: visible;
+   }
+
+   /*sign in section fade out animation*/
+   .signin.hide {
+      visibility: hidden;
+      z-index: -200;
+      -webkit-animation: fadeOut 0.3s;
+      animation: fadeOut 0.3s;
+   }
+
+   @-webkit-keyframes fadeOut {
+      from {opacity: 1;}
+      to {opacity: 0;}
+   }
+
+   @keyframes fadeOut {
+      from {opacity: 1;} 
+      to {opacity: 0;}
    }
 
    #signin-signup{
@@ -107,7 +126,7 @@
    }
 
    /*sign up section of login page*/
-   #signup{
+   .signup{
       position: fixed;
       display: flex;
       flex-direction: column;

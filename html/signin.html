@@ -24,31 +24,31 @@
     </section>
 
     <!--Sign in screen that appears after the user sees the splashscreen-->
-    <section id="signin">
+    <section class="signin">
       <h1 id="signin-header1">Welcome to Balanced</h1>
       <h2 id="signin-header2">Sign in</h2>
       <div id="alert alert-invalid" role="alert" style="display: none;">
         Incorrect email/password, try again.
       </div>
       <form id="signin-form" action="index.html" method="GET">
-        <input type="email" placeholder="Email" id="signin-email" pattern="[S][0-9]{8}[A-Z]" required><br>
+        <input type="email" placeholder="School Email" id="signin-email" pattern="[Ss][0-9]{8}[A-Za-z]"><br>
         <input type="password" placeholder="Password" id="signin-password" required><br>
         <input type="submit" value="Sign In" id="signin-button">
       </form>
-      <a id="signin-signup">Don't have an account?</a>
+      <a class="signinsignup">Don't have an account?</a>
     </section>
 
     <!--Sign up screen that appears if the user does not have an account-->
-    <section id="signup">
+    <section class="signup">
       <h1 id="signup-header1">Welcome to Balanced</h1>
       <h2 id="signup-header2">Sign up</h2>
       <form id="signup-form" action="index.html" method="POST">
         <input type="text" placeholder="Full name" id="signup-name" required><br>
-        <input type="email" placeholder="Email" id="signup-email" required><br>
+        <input type="email" placeholder="School Email" id="signup-email" required><br>
         <input type="password" placeholder="Password" id="signup-password" required>
         <input type="submit" value="Sign Up" id="signup-button">
       </form>
-      <a id="signup-signin">Already have an account?</a>
+      <a class="signupsignin">Already have an account?</a>
       <p id="signup-terms">By creating an account, you agree to our <a href="">Terms</a></p>
     </section>
     

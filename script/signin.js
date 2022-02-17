@@ -1,22 +1,16 @@
 //javascript to remove splashscreen after 3 seconds
-document.addEventListener('DOMContentLoaded', (e)=>{
+document.addEventListener('DOMContentLoaded', () => {
    //splashscreen javascript
    setTimeout(()=>{
       $('#splash').css({"opacity": "0", "z-index": "-200", "transition": "all 1s"});
    }, 3000);
 
-   //if user does not have an account
-   $("#signin-signup").on("click", ()=>{
-      $("#signin").css("z-index", "-200");
-   });
+   //if user does not have an account/has an account and wishes to switch between signin and signup pages
+   document.querySelector(".signinsignup").addEventListener("click", () => {
+      document.querySelector(".signin").classList.toggle("hide");
+   })
 
-   //if user has an account
-   $("#signup-signin").on("click", ()=>{
-      $("#signin").css("z-index", "200");
-   });
-
-   //RESTDB AND SIGN IN AND SIGN UP
-   //reset form values
-   $("#signin-form").reset();
-   $("#signup-form").reset();
+   document.querySelector(".signupsignin").addEventListener("click", () => {
+      document.querySelector(".signin").classList.toggle("hide");
+   })
 });

@@ -80,6 +80,7 @@
     margin: auto;
   }
 
+  /*help popup fade in animation*/
   .help.show {
     visibility: visible;
     -webkit-animation: fadeIn 0.3s;

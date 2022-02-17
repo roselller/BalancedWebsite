@@ -135,7 +135,6 @@
     transition: 0.3s ease;
   }
 
-  /* Dynamic class */
   /* Make the message visible */
   .show_message {
     display: block;

@@ -69,7 +69,7 @@
     width: 95%;
     margin: auto;
   }
-  
+
   .container1 {
     display: flex;
     justify-content: flex-start;
@@ -106,6 +106,12 @@
     right: 5%;
     top: 4%;
     color: black;
+  }
+
+  /*removal of notes*/
+  #removeBtn {
+    position: absolute;
+    
   }
 
   /*navigation bar*/
