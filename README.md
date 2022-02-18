@@ -35,7 +35,7 @@ Acceptance Criteria:
    - A selection of questions will be shown and user will have to pick the correct answer based on the question displayed.
    - Answers will be updated onto our database to see how many of the questions students answered correctly/wrong.
 
-You can access our wireframe for this project via this link: https://xd.adobe.com/view/ccf5385c-9564-43c5-ba90-a9a3277be86e-99a6/
+You can access our wireframe for this project via this link: https://xd.adobe.com/view/3931e9b9-bdc4-4a92-ab7b-752d69c6e329-6c62/
 
 ## Features
 
