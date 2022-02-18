@@ -37,6 +37,8 @@ Acceptance Criteria:
 
 You can access our wireframe for this project via this link: https://xd.adobe.com/view/3931e9b9-bdc4-4a92-ab7b-752d69c6e329-6c62/
 
+Github link: https://github.com/roselller/BalancedWebsite.git
+
 ## Features
 
 ### Existing Features
