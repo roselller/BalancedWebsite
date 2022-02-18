@@ -31,7 +31,7 @@
         Incorrect email/password, try again.
       </div>
       <form id="signin-form" action="index.html" method="GET">
-        <input type="email" placeholder="School Email" id="signin-email" pattern="[Ss][0-9]{8}[A-Za-z]"><br>
+        <input type="email" placeholder="School Email" id="signin-email" pattern="[Ss][0-9]{8}[A-Za-z]+@[connect.np.edu]+\.[sg]{1,}$"><br>
         <input type="password" placeholder="Password" id="signin-password" required><br>
         <input type="submit" value="Sign In" id="signin-button">
       </form>
@@ -49,7 +49,7 @@
         <input type="submit" value="Sign Up" id="signup-button">
       </form>
       <a class="signupsignin">Already have an account?</a>
-      <p id="signup-terms">By creating an account, you agree to our <a href="">Terms</a></p>
+      <p id="signup-terms">By creating an account, you agree to our Terms</a></p>
     </section>
     
     <script src="../script/signin.js"></script>
