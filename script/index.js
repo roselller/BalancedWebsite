@@ -20,13 +20,6 @@ function addNote() {
   var nodeSticky = document.createElement("section");
   var nodeContents = document.createElement("h1"); //h1 inside section (sticky note)
 
-  //creating and adding html tags into delete button to remove sticky note
-  var nodeDelete = document.createElement("i");
-  nodeDelete.classList.add("bx");
-  nodeDelete.classList.add("bx-x");
-  nodeDelete.id = "deleteBtn";
-  nodeDelete.addEventListener("click", deleteNote());
-
   container2.style.display = "none";
   note++;
 
@@ -38,7 +31,6 @@ function addNote() {
 
   //add text and delete button elements into the sticky note section
   nodeSticky.appendChild(nodeContents);
-  nodeSticky.appendChild(nodeDelete)
 
   container1.insertAdjacentElement("beforeend", nodeSticky);
 
@@ -46,10 +38,10 @@ function addNote() {
     document.querySelector("#none-note").style.visibility = "hidden";
   };
 
-  /*
-  nodeDelete.addEventListener("click", function(){ //delete sticky note
-    nodeDelete.remove();
-  }) */
+  
+  nodeSticky.addEventListener("click", function(){ //delete sticky note
+    nodeSticky.remove();
+  }) 
 };
 
 function deleteNote() {
