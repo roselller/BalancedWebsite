@@ -1,4 +1,4 @@
-# Your Project's Name
+# Balanced website
 
 Our project is called Balanced, a productivity application  that aims to increase productivity levels for Ngee Ann Polytechnic Students. We adapted this concept from our Innovation Made Possible (IMP) Project and refined it to incorporate gamification to our application.
 
@@ -98,7 +98,7 @@ For any scenarios that have not been automated, test the user stories manually a
    3. Try to type a few words to verify that it inputs correctly
    4. Click on the "x" icon and verify that the textbox has been closed
    5. Click on the "+" icon in the textbox and verify that your input has been recorded on the "To Do List" page
-   6. Click on the "x" icon in the textbox of your input and verify that the textbox has been deleted from the "To Do List" page.
+   6. Click on textbox of your input and verify that the textbox has been deleted from the "To Do List" page.
 
 3. Music:
 
