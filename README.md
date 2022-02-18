@@ -120,7 +120,7 @@ For any scenarios that have not been automated, test the user stories manually a
    3. Click on "Quit" and verify that the quiz has stopped and return back to the main page of Quiz
    4. Click on a correct answer and vertify that a tick has been displayed
    5. Click on a wrong answer and verify that a cross has been displayed
-   6.
+   6. Verify that a "Good Job" message will be displayed after completion of quiz.
 
 6. Settings:
 
@@ -144,11 +144,11 @@ Our application works according to the specifications we adjusted (for mobile de
 
 ## Credits
 
+### Content
+
 We mostly obtained help and resources via:
 
 - https://www.w3schools.com/default.asp
-
-### Content
 
 ### Media
 
