@@ -101,4 +101,14 @@
     border-radius: 15px;
     margin-top: 5px;
   }
+
+  /*lottie files to display if user was correct or wrong*/
+  .q-alert {
+    position: fixed;
+    visibility: hidden;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
 }

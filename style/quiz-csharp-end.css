@@ -28,6 +28,7 @@
     z-index: -999;
   }
 
+  /*quit button if user does not want to be quizzed*/
   .quit {
     position: absolute;
     width: 75%;
@@ -42,12 +43,13 @@
     color: #f3fff9;
     background-color: #d00e0e;
   }
-  
-  .start, .question1, .question2, .question3s{
+
+  .start {
     position: absolute;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 75%;
     height: 75%;
     text-align: center;
@@ -59,5 +61,23 @@
     border: 1px solid #70707070;
     background-color: #f3fff9;
     box-shadow: 0 0 0 100000px rgba(0,0,0,.2);
-  };
+  }
+
+  #confetti-anim {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 34%;
+    left: 50%;
+  }
+
+  .start h1 {
+    font-size: 60px;
+  }
+
+  .start p {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    bottom: 30px;
+    left: 50%;
+  }
 }

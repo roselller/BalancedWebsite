@@ -1,9 +1,7 @@
 //hard coding questions
 //creating variables
 const question = document.querySelector('.qn');
-const choices = Array.from(document.querySelector('.choice-text'));
-console.log(question);
-console.log(choices);
+const choices = Array.from(document.getElementsByClassName("choice-text"));
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -53,7 +51,7 @@ startGame = () => { //starts the quiz
 getNewQuestion = () => { //replaces question at every turn
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //go to the end page
-        return window.location.assign('/quiz-csharp-end.html');
+        return window.location.assign("../html/quiz-csharp-end.html");
     }
 
     questionCounter++;
@@ -62,9 +60,9 @@ getNewQuestion = () => { //replaces question at every turn
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question; //changes questions
 
-    //changes choices
+    //changes choices html using datasets
     choices.forEach((choice) => {
-        const number = choice.dataset['number'];
+        const number = choice.dataset["number"];
         choice.innerHTML = currentQuestion['choice' + number];
     });
 
@@ -79,9 +77,28 @@ choices.forEach((choice) => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
-        getNewQuestion();
+
+        //checks if user is correct or not and displays it
+        let ansCW = document.getElementById('ans-wrong');
+        if (selectedAnswer == currentQuestion.answer) {
+          ansCW = document.getElementById('ans-correct');
+        };
+
+        setTimeout( () => {
+          ansCW.style.visibility = 'visible';
+          ansCW.play();
+
+          ansCW.addEventListener('loop', () => {
+
+            ansCW.style.visibility = 'hidden';
+          })
+
+          getNewQuestion(); //call method to change question after every turn after timeout
+        }, 2000)
     });
 });
+
+startGame();
 
 //start function to start quiz when user presses screen
 document.querySelector(".start").addEventListener("click", () => {
@@ -96,6 +113,5 @@ document.querySelector(".start").addEventListener("click", () => {
     start.style.visibility = "hidden";
     qn.style.visibility = "visible";
     document.querySelector(".qn").style.visibility = "visible";
-    startGame();
   })
 })

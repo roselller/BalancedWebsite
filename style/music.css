@@ -98,12 +98,13 @@
 
   /*Genre List*/
   .genre-list {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     transform: translate(-50%, -50%);
-    top: 30%;
+    top: 20%;
     left: 50%;
+    text-align: center;
   }
 
   .genre-list article {
@@ -132,7 +133,7 @@
   /*navigation bar*/
   .nav {
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     height: 44px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
